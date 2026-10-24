@@ -27,7 +27,7 @@ echo ====================================
 echo Tips:
 echo - Real video needs ARK_API_KEY.
 echo - Real super-res needs AMK_API_KEY.
-echo - Super-res costs AI MediaKit credits.
+echo - Super-res uses the configured AI MediaKit free task type.
 echo ====================================
 set /p MENU_CHOICE=Choose 1-9 and press Enter: 
 
@@ -62,7 +62,7 @@ python main.py --resume "%OUTPUT_DIR%" --real-video --parts %PARTS%
 goto done
 
 :super_res
-echo Real super-res costs AI MediaKit credits.
+echo Real super-res uses the configured AI MediaKit free task type.
 set /p CONFIRM_SUPER=Type Y to continue, or anything else to return: 
 if /I not "%CONFIRM_SUPER%"=="Y" goto menu
 call :read_output_dir
@@ -71,7 +71,7 @@ python main.py --super-res-parts "%OUTPUT_DIR%" --real-super-res --parts %PARTS%
 goto done
 
 :resume_super_res
-echo Real super-res costs AI MediaKit credits.
+echo Real super-res uses the configured AI MediaKit free task type.
 set /p CONFIRM_RESUME_SUPER=Type Y to continue, or anything else to return: 
 if /I not "%CONFIRM_RESUME_SUPER%"=="Y" goto menu
 call :read_output_dir
