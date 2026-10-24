@@ -1,0 +1,71 @@
+video_count: 1
+
+dishes_per_video:
+  min: 3
+  max: 4
+
+parts_per_video: 6
+duration_per_part: 15
+
+paths:
+  dishes_path: "dishes.txt"
+  prompt_template_path: "prompt_template.txt"
+  output_dir: "outputs"
+  assets_dir: "assets"
+  logs_dir: "logs"
+
+llm:
+  provider: "volcengine_ark"
+  api_key_env: "ARK_API_KEY"
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  model: "doubao-seed-2-0-pro-260215"
+  temperature: 0.7
+  max_completion_tokens: 12000
+
+runtime:
+  mock_llm: false
+  overwrite_existing: false
+
+seedance:
+  enabled: false
+  api_key_env: "ARK_API_KEY"
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  model: "doubao-seedance-2-0-fast-260128"
+  ratio: "9:16"
+  resolution: "480p"
+  duration: 15
+  generate_audio: true
+  watermark: false
+  reference_image_path: "assets/orange_cat.png"
+  reference_image_role: "reference_image"
+  reference_prompt_prefix: "只参考参考图里的橘猫形象，其他内容都不用参考。请保持同一只拟人化直立橘猫的外观：橘色长毛、圆脸、大眼睛、毛茸茸尾巴、蓝色牛仔围裙。不要参考图片里的背景、姿势、构图、光线或道具。视频内容以当前文字提示词为准。"
+  poll_interval_seconds: 10
+  max_poll_attempts: 120
+  request_timeout_seconds: 60
+  max_retries: 3
+  mock_video: true
+
+compose:
+  enabled: true
+  output_filename: "final_90s.mp4"
+  require_real_video: true
+  overwrite_existing: false
+
+super_resolution:
+  enabled: false
+  provider: "volcengine_aimediakit"
+  api_key_env: "AMK_API_KEY"
+  base_url: "https://mediakit.cn-beijing.volces.com"
+  submit_path: "/api/v1/tools/enhance-video"
+  query_path_template: "/api/v1/tasks/{task_id}"
+  task_type: "free"
+  target_resolution: "1080p"
+  mock_super_resolution: true
+  overwrite_existing: false
+  poll_interval_seconds: 10
+  max_poll_attempts: 120
+  request_timeout_seconds: 300
+  max_retries: 3
+
+debug:
+  save_seedance_prompt: false

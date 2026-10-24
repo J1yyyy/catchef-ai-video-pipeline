@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+logs/*
+!logs/README.md
+outputs/*
+!outputs/README.md

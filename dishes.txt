@@ -1,0 +1,41 @@
+# 每行一个印尼菜名。空行和 # 注释会被忽略。
+印尼炸鸡（Ayam goreng）
+南姜炸鸡（Ayam goreng lengkuas）
+印尼鸡汤（Soto ayam）
+印尼乡村鸡汤（Sup ayam kampung）
+印尼椰奶鸡（Opor ayam）
+沙爹鸡肉串（Sate ayam）
+巴东牛肉仁当（Rendang sapi）
+黑牛肉汤（Rawon）
+印尼乡村炒饭（Nasi goreng kampung）
+印尼炒面（Mie goreng）
+烤鱼（Ikan bakar）
+香蕉叶蒸鱼（Pepes ikan）
+巴东酱大虾（Udang saus padang）
+辣椒鸡蛋（Telur balado）
+炸玉米饼（Bakwan jagung）
+炸豆腐（Tahu goreng）
+炸天贝（Tempe goreng）
+土豆饼（Perkedel kentang）
+炒空心菜（Tumis kangkung）
+酸味蔬菜汤（Sayur asem）
+印尼杂菜炒（Capcay）
+花生酱拌蔬菜沙拉（Gado-gado）
+辣炒土豆丁（Sambal goreng kentang）
+椰浆蔬菜炖菜（Sayur lodeh）
+印尼黄姜饭（Nasi kuning）
+椰浆饭（Nasi uduk）
+香蕉叶包饭（Nasi bakar）
+印尼什锦饭（Nasi campur）
+鸡肉粥（Bubur ayam）
+印尼牛肉丸汤（Bakso sapi）
+鸡肉丸汤（Bakso ayam）
+牛尾汤（Sop buntut）
+羊肉汤（Sop kambing）
+印尼煎蛋卷（Telur dadar）
+辣椒茄子（Terong balado）
+辣炒虾仁（Sambal udang）
+炸香蕉（Pisang goreng）
+椰丝糯米点心（Klepon）
+椰浆糯米糕（Kue lapis）
+椰糖煎饼（Dadar gulung）
